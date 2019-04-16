@@ -1,16 +1,13 @@
-'use strict';
+"use strict";
 
+let money = +prompt("Ваш бюджет на місяць?");
+let time = prompt("Введите дату в формате YYYY-MM-DD");
+let moneyMounth = prompt("Введите обязательную статью расходов в этом месяце");
+let howMuch = prompt("Во сколько обойдется?");
 
-var number = 5;
-var string = 'hello';
-var sym = Symbol();
+let appData = {budget:money, timeData:time, expenses: {moneyMounth:howMuch}, 
+                optionalExpenses:null, income:null, savings:false};
 
-var person = {name: "Jonh", age: 25, isMarried: 22,};
-console.log(person.name);
+let oneDayMoney = alert(money/30);
 
-let pics = ['plum.png', 'orange.jpeg'];
-
-console.log(pics[0]);
-
-let answer = prompt("Вам 18", "DA");
-console.log(typeof(answer));
+console.log(money);
