@@ -1,3 +1,5 @@
-let pics = ['plum.png', 'orange.jpeg'];
 
-console.log(pics[0]);
+let a = [1,2,3,4,5];
+a.forEach(function (item, i, mass){
+  console.log(i + ': ' + item + " (масив: " + mass + ')');
+});
